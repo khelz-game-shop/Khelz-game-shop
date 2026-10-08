@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: khelz-game-shope
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: MIDTRANS_IS_PRODUCTION
+        value: "false"
+      - key: MIDTRANS_SERVER_KEY
+        sync: false
+      - key: MIDTRANS_CLIENT_KEY
+        sync: false
+      - key: STORE_NAME
+        value: KHELZ GAME SHOPE
+      - key: WHATSAPP_NUMBER
+        sync: false
